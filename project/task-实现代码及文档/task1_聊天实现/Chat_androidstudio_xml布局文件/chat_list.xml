@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <!--顶部-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/chat_back"
+                android:layout_width="25dp"
+                android:src="@drawable/fanhui"
+                android:layout_height="25dp" />
+            <TextView
+                android:layout_weight="9"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:text="消息盒子"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="15dp"
+                android:src="@drawable/caianniu"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <!--聊天列表-->
+    <ListView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+
+</LinearLayout>

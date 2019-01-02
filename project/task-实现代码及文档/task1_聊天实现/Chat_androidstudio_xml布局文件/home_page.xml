@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.example.zjq.my_app.HomePage.Top.FadingScrollView
+        android:id="@+id/nac_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_heightPercent="92%">
+
+        <!--最外层-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E5E5E5"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <!--滚动图-->
+                    <LinearLayout
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/vp"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"/>
+
+                    </LinearLayout>
+
+                    <!--中间-->
+                    <LinearLayout
+                        android:background="#FFFFFF"
+                        android:id="@+id/zhongjian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image"
+                        android:layout_margin="3dp"
+                        android:gravity="center">
+
+                        <TableLayout
+                            android:layout_margin="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="250dp">
+                            <TableRow>
+                                <TextView android:text="限时抢购" />
+
+                                <TextView android:text="限时抢购" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <ImageView
+                                    android:layout_width="160dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/p6" />
+
+                                <ImageView
+                                    android:layout_width="160dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/p6" />
+
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView android:text="限时抢购" />
+
+                                <TextView android:text="限时抢购" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <ImageView
+                                    android:layout_width="160dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/p6" />
+
+                                <ImageView
+                                    android:layout_width="160dp"
+                                    android:layout_height="100dp"
+                                    android:src="@drawable/p6" />
+                            </TableRow>
+
+                        </TableLayout>
+                    </LinearLayout>
+
+                    <!--猜你喜欢-->
+                    <LinearLayout
+
+                        android:layout_margin="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/zhongjian"
+                        android:gravity="center">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TableRow android:gravity="center"
+                                android:background="#E5E5E5">
+                                <TextView
+                                    android:background="#FFFFFF"
+                                    android:gravity="center"
+                                    android:text="猜你喜欢" />
+                            </TableRow>
+
+                            <TableRow  android:gravity="center"
+                                android:background="#FFFFFF"
+                                android:layout_margin="2dp">
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="140dp"
+                                        android:layout_height="170dp"
+                                        android:src="@drawable/port1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="超级好的电脑" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="￥998"
+                                        android:textColor="@android:color/holo_red_dark" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_margin="10dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="140dp"
+                                        android:layout_height="170dp"
+                                        android:src="@drawable/port1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="超级好的电脑" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="￥998"
+                                        android:textColor="@android:color/holo_red_dark" />
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow android:gravity="center"
+                                android:layout_margin="3dp"
+                                android:background="#FFFFFF">
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="140dp"
+                                        android:layout_height="170dp"
+                                        android:src="@drawable/port1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="超级好的电脑" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="￥998"
+                                        android:textColor="@android:color/holo_red_dark" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="140dp"
+                                        android:layout_height="170dp"
+                                        android:src="@drawable/port1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="超级好的电脑" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="￥998"
+                                        android:textColor="@android:color/holo_red_dark" />
+                                </LinearLayout>
+                            </TableRow>
+
+
+                        </TableLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.example.zjq.my_app.HomePage.Top.FadingScrollView>
+
+    <!--搜索框-->
+    <FrameLayout
+        android:id="@+id/sou"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent">
+        <View
+            android:background="#444242"
+            android:id="@+id/nac_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/soutu"
+            android:gravity="center_vertical"
+            android:hint="搜索"
+            android:textSize="20dp" />
+        <ImageView
+            android:id="@+id/chat"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="30dp"
+            android:src="@drawable/xiaoxi"
+            android:layout_height="40dp" />
+
+    </FrameLayout>
+</android.support.percent.PercentRelativeLayout>
+
+
+

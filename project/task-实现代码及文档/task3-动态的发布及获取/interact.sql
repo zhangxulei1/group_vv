@@ -1,0 +1,10 @@
+INSERT INTO `interact` VALUES (1, '路飞', 'R.draware.usertouxiang100', '2018年12月01日 07:56:06', '我们去玩吧', 'R.draware.interactphoto100', '6');
+INSERT INTO `interact` VALUES (2, '娜美', 'R.draware.usertouxiang101', '2018年11月02日 07:36:06', '我今天去了这里，还不错', 'R.draware.interactphoto101', '120');
+INSERT INTO `interact` VALUES (3, '山治', 'R.draware.usertouxiang102', '2018年10月24日 14:56:06', '沙漠很好玩，推荐给你们，这里的点评很高', 'R.draware.interactphoto102', '7');
+INSERT INTO `interact` VALUES (4, '索罗', 'R.draware.usertouxiang103', '2018年10月23日 16:36:06', '下雪了，给你们发一张图片', 'R.draware.interactphoto103', '36');
+INSERT INTO `interact` VALUES (5, '乔巴', 'R.draware.usertouxiang104', '2018年9月12日 18:36:41', '我今天去了这里，还不错', 'R.draware.interactphoto104', '65');
+INSERT INTO `interact` VALUES (6, '小至', 'R.draware.usertouxiang105', '2018年8月24日 17:36:28', '猜猜我在哪', 'R.draware.interactphoto105', '76');
+INSERT INTO `interact` VALUES (7, '吴秀波', 'R.draware.usertouxiang106', '2018年8月13日 15:36:56', 'There is a saying, you many times to give up, but still reluctant.', 'R.draware.interactphoto106', '74');
+INSERT INTO `interact` VALUES (8, 'Tony', 'R.draware.usertouxiang107', '2018年7月28日 22:25:43', '今天逛了夜景，很开心', 'R.draware.interactphoto107', '90');
+INSERT INTO `interact` VALUES (9, 'ohh', 'R.draware.usertouxiang108', '2018年7月22日 20:36:06', '要住么', 'R.draware.interactphoto108', '45');
+INSERT INTO `interact` VALUES (10, '大眼睛', 'R.draware.usertouxiang109', '2018年7月16日 09:39:01', '立个flag，发个动态', 'R.draware.interactphoto109', '89');

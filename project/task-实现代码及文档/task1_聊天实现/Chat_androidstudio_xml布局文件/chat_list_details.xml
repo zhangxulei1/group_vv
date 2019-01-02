@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <!--顶部-->
+    <LinearLayout
+        app:layout_heightPercent="10%"
+        android:id="@+id/message_box"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/details_back"
+                android:layout_width="25dp"
+                android:src="@drawable/fanhui"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/chat_username"
+                android:layout_weight="9"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:text="聊天对象名称"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="15dp"
+                android:src="@drawable/caianniu"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/juat_line"
+        android:layout_below="@+id/message_box"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <!--聊天详情-->
+
+        <android.support.v7.widget.RecyclerView
+            app:layout_heightPercent="70%"
+            android:id="@+id/mRv"
+            android:layout_below="@+id/juat_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    <!--输入框和发送按钮-->
+        <LinearLayout
+
+            app:layout_heightPercent="10%"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_margin="2dp"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/mEt"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <Button
+                android:layout_height="60dp"
+                android:id="@+id/send"
+                android:layout_width="70dp"
+                android:text="发 送" />
+        </LinearLayout>
+
+        </LinearLayout>
+        </android.support.percent.PercentRelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
